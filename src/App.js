@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header/Header";
+import Sidebar from "./components/Sidebar/Sidebar.js";
+import Feed from "./components/Feed/Feed.js";
+
+// CSS files
+import "./App.css";
+import Widgets from "./components/Widgets/Widgets";
+import Login from "./components/Login/Login";
+//REDUX UseSelector - get user from redux store
+import { useSelector } from "react-redux";
 
 function App() {
+  //Dispatch()
+  const userN = useSelector((state) => state.isLogged);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!userN.user ? (
+        <Login />
+      ) : (
+        <>
+          <Header
+            avatarImg={userN.user.photoURL}
+            profileName={userN.user.displayName}
+          />
+
+          <div className="app-body">
+            <Sidebar />
+            {/* feed */}
+            <Feed />
+            {/* widgets (iframe)*/}
+            <Widgets />
+          </div>
+        </>
+      )}
     </div>
   );
 }

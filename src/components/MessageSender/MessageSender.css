@@ -1,0 +1,96 @@
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mr-35 {
+  margin-right: 20px;
+}
+
+.messageSender {
+  padding: 3%;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5%;
+  box-shadow: 2px 6px 10px -7px rgba(100, 98, 98, 0.75);
+  width: 65%;
+}
+
+.messageSender__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3%;
+  border-bottom: 1px solid #e4e6e9;
+}
+
+.messageSender__bottom {
+  display: flex;
+  justify-content: space-evenly;
+  color: #9c9b9b;
+  padding-top: 3%;
+}
+
+.messageSender__bottom .messageSender__option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.messageSender__bottom .messageSender__option:hover {
+  background-color: #eff2f5;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.messageSender__input {
+  padding: 0.7rem 2rem;
+  border: transparent;
+  background-color: #e4e6e9;
+  border-radius: 20px;
+  outline: transparent;
+}
+
+.messageSender__input-img-url {
+  padding: 0.7rem;
+  border: transparent;
+  background-color: #e4e6e9;
+  border-radius: 20px;
+  outline: transparent;
+  width: 26%;
+}
+
+.mood-icon {
+  color: rgb(255, 192, 162);
+  cursor: pointer;
+}
+
+.video-icon {
+  color: rgb(243, 49, 49);
+  cursor: pointer;
+}
+
+.photoLibrary-icon {
+  color: rgb(47, 220, 77);
+  cursor: pointer;
+}
+
+.submit-btn {
+  /* background-color: white;
+  border-color: transparent;
+  outline: transparent; */
+  display: none;
+}
+.btn-form .MuiIconButton-root {
+  /* padding: 8%;
+  margin: 0 0 0 1rem; */
+  color: #1877f2;
+}
+
+.addIconBtn {
+  padding: 0;
+}
+
+.messageSender__top__avatar {
+  cursor: pointer;
+}

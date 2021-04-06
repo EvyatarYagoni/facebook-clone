@@ -1,0 +1,45 @@
+.login {
+  background-color: #f0f2f5;
+  height: 100vh;
+}
+
+.login__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login__logo > img {
+  width: 15%;
+  height: 15%;
+  border-radius: 70%;
+  margin: 6% 0 3% 0;
+}
+
+.login__logo .login__title {
+  font-size: xx-large;
+  color: #1877f2;
+  font: bold;
+}
+
+.login__signIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8%;
+}
+
+.btn-signIn {
+  padding: 0.5% 9%;
+  border-radius: 5px;
+  background-color: #1877f2;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-signIn:hover {
+  background-color: rgb(172, 167, 167);
+  color: rgb(0, 0, 0);
+}

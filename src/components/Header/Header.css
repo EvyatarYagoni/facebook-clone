@@ -1,0 +1,110 @@
+.header {
+  /* padding: 1rem; */
+  padding: 1rem 1rem 0.5rem 1rem;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  gap: 3%;
+  box-shadow: 0px 3px rgba(240, 242, 245, 1);
+  font-family: "lato", "roboto";
+}
+
+/* header left  */
+.header__left {
+  display: flex;
+}
+
+.header__left .header-search {
+  background-color: #e4e6e9;
+  outline: transparent;
+  cursor: pointer;
+  border-radius: 51px;
+  border-color: transparent;
+  padding: 10px;
+  color: #6b6b6b;
+  width: 50%;
+  margin-left: 8px;
+}
+
+.header__left .header-search > input {
+  outline: transparent;
+  border-color: transparent;
+  color: #6b6b6b;
+  background-color: #e4e6e9;
+}
+
+.header__left > .header-search {
+  display: flex;
+}
+
+.header__left .option {
+  display: inline-block;
+}
+
+.header__left .option .facebook-image {
+  width: 40px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+/* header middle */
+.header__middle {
+  display: flex;
+}
+
+.header__middle > .option {
+  margin-left: 7%;
+}
+
+.header__middle > .option > .MuiIconButton-root {
+  padding: 3px;
+}
+
+.header__middle > .active > .MuiIconButton-root {
+  color: #1877f2;
+}
+
+.header__middle > .active {
+  border-bottom: 3px solid #1877f2;
+}
+
+.header__middle > .option > .MuiIconButton-root:hover {
+  color: #1877f2;
+}
+
+/* header right */
+.header__right {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 35%;
+}
+
+.header__right > .option > .MuiIconButton-root {
+  padding: 3px;
+}
+
+.header__right > .option > .MuiIconButton-root:hover {
+  color: #1877f2;
+}
+
+.header__right > .avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__right > .avatar > .avatar-name {
+  margin-left: 3%;
+  cursor: pointer;
+  /* font-weight: bold; */
+  /* color: black; */
+}
+
+.header__right > .avatar > .avatar-name:hover {
+  color: #1877f2;
+}
+
+.header__right > .option {
+  margin-left: 4%;
+}

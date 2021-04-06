@@ -1,0 +1,8 @@
+.sidebar {
+  padding: 2% 1% 1% 1%;
+  width: 12%;
+}
+
+.sidebar .MuiButtonBase-root {
+  padding: 0%;
+}
